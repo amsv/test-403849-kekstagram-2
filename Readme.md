@@ -1,6 +1,6 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [Марина Козырева](https://up.htmlacademy.ru/javascript-individual/2/user/403849).
+* Студент: [______](https://up.htmlacademy.ru/javascript-individual/2/user/403849).
 * Наставник: `Неизвестно`.
 
 ---
