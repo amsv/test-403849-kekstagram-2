@@ -1,6 +1,6 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [name-test](https://up.htmlacademy.ru/javascript-individual/2/user/403849).
+* Студент: [name-test1](https://up.htmlacademy.ru/javascript-individual/2/user/403849).
 * Наставник: `Неизвестно`.
 
 ---
