@@ -42,7 +42,8 @@ const getRandomInteger = (from, to) => {
 };
 
 const checkStringLength = (string, maxLength) => {
-  if (typeof string !== 'string' || typeof maxLength !== 'number' || maxLength < 0) {
+  if (typeof string !== 'string' || typeof maxLength !== 'number' ||
+      Number.isNaN(maxLength) || maxLength < 0 || !Number.isFinite(maxLength)) {
     return false;
   }
   return string.length <= maxLength;
