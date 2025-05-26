@@ -43,7 +43,7 @@ const COMMENT_NAMES = [
 
 // Генерация уникальных чисел в диапазоне
 const createUniqueRandomArray = (min, max) => {
-  const arr = [];
+/*   const arr = [];
   for (let i = min; i <= max; i++) {
     arr.push(i);
   }
@@ -51,12 +51,12 @@ const createUniqueRandomArray = (min, max) => {
     const j = getRandomInteger(0, i);
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-  return arr;
+  return arr; */
 };
 
 // Генерация случайного сообщения (одно или два предложения)
 const getRandomMessage = () => {
-  const count = getRandomInteger(1, 2);
+/*   const count = getRandomInteger(1, 2);
   const messages = [];
   while (messages.length < count) {
     const msg = COMMENT_MESSAGES[getRandomInteger(0, COMMENT_MESSAGES.length - 1)];
@@ -64,13 +64,14 @@ const getRandomMessage = () => {
       messages.push(msg);
     }
   }
-  return messages.join(' ');
+  return messages.join(' '); */
+
 };
 
 // Генерация одного комментария
 const usedCommentIds = new Set();
 const generateComment = () => {
-  let id;
+/*   let id;
   do {
     id = getRandomInteger(1, 1000);
   } while (usedCommentIds.has(id));
@@ -80,25 +81,25 @@ const generateComment = () => {
     avatar: `img/avatar-${getRandomInteger(1, 6)}.svg`,
     message: getRandomMessage(),
     name: COMMENT_NAMES[getRandomInteger(0, COMMENT_NAMES.length - 1)]
-  };
+  }; */
 };
 
 // Генерация массива комментариев для фото
 const generateComments = () => {
-  const count = getRandomInteger(0, 10);
-  return Array.from({ length: count }, generateComment);
+/*   const count = getRandomInteger(0, 10);
+  return Array.from({ length: count }, generateComment); */
 };
 
 // Генерация массива фотографий
 const generatePhotos = () => {
-  const ids = createUniqueRandomArray(1, 25);
+/*   const ids = createUniqueRandomArray(1, 25);
   return ids.map((id, idx) => ({
     id,
     url: `photos/${id}.jpg`,
     description: DESCRIPTIONS[idx % DESCRIPTIONS.length],
     likes: getRandomInteger(15, 200),
     comments: generateComments()
-  }));
+  })); */
 };
 
 const photos = generatePhotos();
